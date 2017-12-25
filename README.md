@@ -28,16 +28,16 @@ Below are the steps requied typically:
 *	HOG Features
 *	Color Histogram
 *	Spatial Bin Features
-*       Classification
+*	Classification
 *	Sliding window search
-*       HOG Sub-sampling	
-*       Heatmaps - Rejecting False positives	
-*       Pipeline
+*	HOG Sub-sampling	
+*	Heatmaps - Rejecting False positives	
+*	Pipeline
 *	Discussion
 
 
 [//]: # (Image References) 
-[image1]: ./images/car_no_car.PNG
+[image1]: ./images/car_non_car.PNG
 [image2]: ./images/hog_image_viz.PNG
 [image3]: ./images/classification_metrics.PNG
 [image4]: ./images/sliding_window.PNG
@@ -46,7 +46,7 @@ Below are the steps requied typically:
 [image7]: ./images/heat_map2.PNG
 [image8]: ./images/heat_map3.PNG
 [image9]: ./images/heat_map4.PNG
-[image10]: ./images/Vehicle_Detection_Shapshot.PNG
+[image10]: ./images/Vehicle_Detection_Snapshot.PNG
 
 ---
 ### Data Exploration
@@ -92,9 +92,13 @@ In my implmentation, I have experimented with 18 bins and found better results. 
 used in this implementation:
 
 color_space = 'YCrCb'
+
 orient = 18  # HOG orientations
+
 pix_per_cell = 8 # HOG pixels per cell
+
 cell_per_block = 2 # HOG cells per block
+
 hog_channel = 'ALL'  # Can be 0, 1, 2, or "ALL"
 
 
@@ -142,7 +146,6 @@ Below shows the various experiments run for a combination of xy-overlaps and sta
 
 
 ![alt text][image5]
-
 
 
 ### HOG Sub-sampling
@@ -206,6 +209,8 @@ Below shows examples of cars detected:
 ### Video Generation
 
 Below is the ink to the Video generated:
+
+https://github.com/sreakdgeek/Vehicle-Detection/blob/master/project_video_final.mp4
 
 
 ### Discussion
